@@ -1,0 +1,45 @@
+@import src/styles/theme
+@import src/styles/typography
+
+.input__label
+  @extend .Body-2
+  color: $color-black-80
+
+.input-field
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  position: relative
+
+  &_disabled
+    background: $color-black-5
+
+.input-field__input
+  @extend .Body-1
+  width: 100%
+  box-sizing: border-box
+  padding: 4px 8px 4px 8px
+  transition: all 0.3s
+  caret-color: $color-primary-100
+  border-color: $color-black-100
+  background: transparent
+  border: 0
+  border-bottom: 1px solid $color-primary-100
+
+  &:hover
+    border-color: $color-primary-100
+
+  &:focus
+    outline: none
+    border-color: $color-primary-100
+
+.input-field__invisible
+  background: transparent
+  border: 0
+  &:focus
+    outline: none
+
+  &_disabled
+    border: 0
+    color: $color-black-60
+    background-color: transparent
