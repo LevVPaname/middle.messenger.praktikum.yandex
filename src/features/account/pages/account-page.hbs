@@ -1,0 +1,59 @@
+<div class="account__panel">
+  <div class="avatar">
+    <div class="avatar__icon">
+      <img src={{icon}} />
+    </div>
+    <div class="avatar__text">{{first_name}} {{second_name}}</div>
+  </div>
+
+  <div class="user__info">
+    <div class="info__row">
+      <div>Почта</div>
+      <div>
+        <input disabled="0" class='input-field__invisible_disabled' value="{{email}}" />
+      </div>
+    </div>
+    <div class="info__row">
+      <div>Логин</div>
+      <div>
+        <input disabled="0" class='input-field__invisible_disabled' value="{{login}}" />
+      </div>
+    </div>
+    <div class="info__row">
+      <div>Имя</div>
+      <div>
+        <input disabled="0" class='input-field__invisible_disabled' value="{{first_name}}" />
+      </div>
+    </div>
+    <div class="info__row">
+      <div>Фамилия</div>
+      <div>
+        <input disabled="0" class='input-field__invisible_disabled' value="{{second_name}}" />
+      </div>
+    </div>
+    <div class="info__row">
+      <div>Имя в чате</div>
+      <div>
+        <input disabled="0" class='input-field__invisible_disabled' value="{{first_name}}" />
+      </div>
+    </div>
+    <div class="info__row">
+      <div>Телефон</div>
+      <div>
+        <input disabled="0" class='input-field__invisible_disabled' value="{{phone}}" />
+      </div>
+    </div>
+  </div>
+
+  <div class="button__group">
+    <div class="info__row">
+      {{{editInfoButton}}}
+    </div>
+    <div class="info__row">
+      {{{editPassButton}}}
+    </div>
+    <div class="info__row">
+      {{{exitButton}}}
+    </div>
+  </div>
+</div>

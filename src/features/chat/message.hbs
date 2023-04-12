@@ -1,0 +1,32 @@
+<div>
+  {{#if mine}}
+  <div class="message message__mine">
+    <div class="message__content message__content__mine">
+    {{#if image}}
+    <img class="messages__attach" src={{image}} alt="image">
+    {{/if}}
+    <div>
+      {{message}}
+    </div>
+    <div class="messages__message-info">
+      <img src={{icon}} alt="icon" />
+      <div>{{time}}</div>
+    </div>
+    </div>
+  </div>
+  {{else}}
+  <div class="message">
+    <div class="message__content">
+      {{#if image}}
+      <img src={{image}} alt="image">
+      {{/if}}
+      <div>
+        {{message}}
+      </div>
+      <div class="messages__message-info">
+        <div>{{time}}</div>
+      </div>
+    </div>
+  </div>
+  {{/if}}
+</div>

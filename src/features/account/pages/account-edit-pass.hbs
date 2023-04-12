@@ -1,0 +1,34 @@
+<div class="account__panel">
+  <form id="edit-password">
+    <div class="avatar">
+      <div class="avatar__icon">
+        <img src={{icon}} />
+      </div>
+    </div>
+
+    <div class="user__info">
+      <div class="info__row">
+        <div>Старый пароль</div>
+        <div>
+          <input name="old-pass" type="password" class='input-field__invisible' id='password' value="{{password}}" />
+        </div>
+      </div>
+      <div class="info__row">
+        <div>Новый пароль</div>
+        <div>
+          <input name="pass" id='pass' type="password" class='input-field__invisible' />
+        </div>
+      </div>
+      <div class="info__row">
+        <div>Повторите новый пароль</div>
+        <div>
+          <input name="pass-repeat" id="pass-repeat" type="password" class='input-field__invisible' />
+        </div>
+      </div>
+    </div>
+
+    <div class="button__group_center">
+      {{{saveButton}}}
+    </div>
+  </form>
+</div>

@@ -1,0 +1,52 @@
+<div class="account__panel">
+  <form id="edit-account">
+    <div class="avatar">
+      <div class="avatar__icon">
+        <img src={{icon}} />
+      </div>
+    </div>
+
+    <div class="user__info">
+      <div class="info__row">
+        <div>Почта</div>
+        <div>
+          <input name="email" type="email" class='input-field__invisible' value="{{email}}" />
+        </div>
+      </div>
+      <div class="info__row">
+        <div>Логин</div>
+        <div>
+          <input name="login" class='input-field__invisible' value="{{login}}" />
+        </div>
+      </div>
+      <div class="info__row">
+        <div>Имя</div>
+        <div>
+          <input name="first_name" class='input-field__invisible' value="{{first_name}}" />
+        </div>
+      </div>
+      <div class="info__row">
+        <div>Фамилия</div>
+        <div>
+          <input name="second_name" class='input-field__invisible' value="{{second_name}}" />
+        </div>
+      </div>
+      <div class="info__row">
+        <div>Имя в чате</div>
+        <div>
+          <input name="first_name" class='input-field__invisible' value="{{first_name}}" />
+        </div>
+      </div>
+      <div class="info__row">
+        <div>Телефон</div>
+        <div>
+          <input name="phone" class='input-field__invisible' value="{{phone}}" />
+        </div>
+      </div>
+    </div>
+
+    <div class="button__group_center">
+      {{{saveButton}}}
+    </div>
+  </form>
+</div>
