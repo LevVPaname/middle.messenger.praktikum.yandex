@@ -1,0 +1,16 @@
+@import src/styles/theme
+@import src/styles/typography
+
+.error
+  position: absolute
+  text-align: center
+  color: $color-black-80
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+
+  &__title
+    @extend h1
+
+  &__message
+    @extend h4

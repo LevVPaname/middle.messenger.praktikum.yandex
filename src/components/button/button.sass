@@ -1,0 +1,145 @@
+@import src/styles/theme
+@import src/styles/typography
+
+.button
+  position: relative
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  padding: 0.5em 1em
+  border: 1px solid $color-primary-80
+  border-radius: 4px
+  cursor: pointer
+  color: white
+  background-color: $color-primary-100
+  transition: all 0.3s
+  @extend .Subtitle-2
+
+  &:hover
+    background-color: $color-primary-80
+
+  &:active
+    background-color: $color-btn-primary-pressed
+
+  &[disabled]
+    background-color: $color-black-10
+    border-color: $color-black-40
+    color: $color-black-100
+    cursor: default
+
+  // --- kinds ---
+
+  &_invisible
+    background: transparent
+    border-color: transparent
+    color: $color-black-80
+
+    &:hover:not([disabled])
+      background: transparent
+      color: $color-primary-80
+
+    &:active:not([disabled])
+      background: transparent
+      color: $color-primary-100
+
+  &_primary_invisible
+    padding: 0
+    cursor: pointer
+    background: transparent
+    border-color: transparent
+    color: $color-primary-80
+
+    &:hover:not([disabled])
+      background: transparent
+      color: $color-primary-80
+
+    &:active:not([disabled])
+      background: transparent
+      color: $color-primary-100
+
+  &_error_invisible
+    padding: 0
+    cursor: pointer
+    background: transparent
+    border-color: transparent
+    color: $color-error-default
+
+    &:hover:not([disabled])
+      background: transparent
+      color: $color-error-light
+
+    &:active:not([disabled])
+      background: transparent
+      color: $color-error-darker
+
+  &_neutral_invisible
+    padding: 0
+    cursor: pointer
+    background: transparent
+    border-color: transparent
+    color: $color-black-80
+
+    &:hover:not([disabled])
+      background: transparent
+      color: $color-black-60
+
+    &:active:not([disabled])
+      background: transparent
+      color: $color-black-100
+
+  &_primary_flat
+    background: transparent
+    border-color: transparent
+    color: $color-primary-80
+
+    &:hover:not([disabled])
+      background: $color-primary-10
+      color: $color-primary-80
+
+    &:active:not([disabled])
+      background: $color-primary-10
+      color: $color-primary-100
+
+  // --- modifiers ---
+
+  &_fullWidth
+    width: 100%
+    font-weight: 500
+
+  &_iconOnly
+    border-radius: 50%
+    padding: 6px
+    font-size: 20px
+    background-color: $color-primary-100
+    border: 1px solid $color-primary-90
+    &:hover
+      background-color: $color-primary-90
+
+    &:active
+      background-color: $color-btn-primary-pressed
+
+  &_iconOnly_flat
+    border-radius: 50%
+    padding: 6px
+    font-size: 25px
+    background-color: transparent
+    border: transparent
+    &:hover
+      background-color: $color-primary-90
+
+    &:active
+      background-color: $color-btn-primary-pressed
+
+.button__icon
+  display: flex
+  height: 1em
+
+  svg
+    height: 100%
+    width: auto
+
+.button__content
+  overflow: hidden
+  position: relative
+  white-space: nowrap
+  text-overflow: ellipsis
